@@ -7,7 +7,7 @@ function ProjectForm({ onAddProject }) {
     const handleSubmit = (e) => {
     e.preventDefault(); // Stop page reload
 
-    // doesnt add when empty
+    // nonr empty
     if (!title.trim() || !description.trim()) return;
 
     
@@ -42,7 +42,6 @@ function ProjectForm({ onAddProject }) {
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-
         <button type="submit">Add</button>
       </form>
     </section>

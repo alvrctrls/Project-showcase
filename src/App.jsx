@@ -12,15 +12,12 @@ const initialProjects = [
 
 function App() {
   const [projects, setProjects] = useState(initialProjects);
-
-  // 2. Search query state
+  
   const [searchTerm, setSearchTerm] = useState('');
 
-  // 3. Handler to add a new project to the array
   const handleAddProject = (newProject) => {
     setProjects([...projects, newProject]);
   };
-
   return (
     <div className="app-layout">
       <Header />
@@ -29,7 +26,6 @@ function App() {
         {/* Pass down the function to add a project */}
         <ProjectForm onAddProject={handleAddProject} />
 
-        {/* Pass down the list data and search values */}
         <ProjectList
           projects={projects}
           searchTerm={searchTerm}
