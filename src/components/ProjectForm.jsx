@@ -7,7 +7,7 @@ function ProjectForm({ onAddProject }) {
     const handleSubmit = (e) => {
     e.preventDefault(); // Stop page reload
 
-    // doesn't add when empty
+    // doesnt add when empty
     if (!title.trim() || !description.trim()) return;
 
     
