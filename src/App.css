@@ -8,6 +8,12 @@
 .app-header {
   margin-bottom: 20px;
   padding: 10px;
+  
+}
+
+.app-header h1 {
+    margin: 0;
+    padding: 10px;
 }
 
 
@@ -43,7 +49,7 @@ button {
   border: 1px solid black;
   border-radius: 4px;
   padding: 4px 16px;
-  background: white;
+  background: rgb(59, 8, 70);
   cursor: pointer;
 }
 

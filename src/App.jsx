@@ -5,9 +5,9 @@ import ProjectList from './components/ProjectList';
 import './App.css';
 
 const initialProjects = [
-  { id: '1', title: 'Project 1', description: 'Description of the project' },
-  { id: '2', title: 'Project 2', description: 'Description of the project' },
-  { id: '3', title: 'Project 3', description: 'Description of the project' },
+  { id: '1', title: 'Project 1', description: 'Created a responsive web ui' },
+  { id: '2', title: 'Project 2', description: 'Built a web app' },
+  { id: '3', title: 'Project 3', description: 'Machine learning library in c from scratch' },
 ];
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Header />
 
       <main className="main-content">
-        {/* Pass down the function to add a project */}
+        {/* Pass down prop to add project */}
         <ProjectForm onAddProject={handleAddProject} />
 
         <ProjectList

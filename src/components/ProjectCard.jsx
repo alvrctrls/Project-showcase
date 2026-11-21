@@ -1,7 +1,7 @@
 function ProjectCard({ project }) {
     return (
         <div className="project-card">
-        <div className="project-placeholder">.</div>
+        <div className="project-placeholder">*</div>
 
         <div className="project-details">
             <h3>{project.title}</h3>
